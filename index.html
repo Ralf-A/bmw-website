@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Models</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="fullscreen-image"></div>
+    <div id="grid">
+        <div class="grid-item" onclick="openModal('details1')">
+            <img src="images/e30.jpg" alt="Car Model 1"> 
+            <h2>BMW E30 / 3-series</h2>
+            <p>Model years: 1982-1994</p>
+        </div>
+        <div class="grid-item" onclick="openModal('details2')">
+            <img src="images/e36.jpg" alt="Car Model 2">
+            <h2>BMW E36 / 3 series</h2>
+            <p>Model years: 1990-2000</p>
+        </div>
+        <div class="grid-item" onclick="openModal('details3')">
+            <img src="images/e39.jpg" alt="Car Model 3">
+            <h2>BMW E39 / 5 series</h2>
+            <p>Model years: 1995-2003</p>
+        </div>
+    </div>
+    
+    <div id="grid">
+        <div class="grid-item" onclick="openModal('details4')">
+            <img src="images/e34.jpg" alt="Car Model 4"> 
+            <h2>BMW E34 / 5 series</h2>
+            <p>Model years: 1988-1995</p>
+        </div>
+        <div class="grid-item" onclick="openModal('details5')">
+            <img src="images/e38.jpg" alt="Car Model 5">
+            <h2>BMW E38 / 7 series</h2>
+            <p>Model years: 1995-2001</p>
+            
+        </div>
+        <div class="grid-item" onclick="openModal('details6')">
+            <img src="images/e32.jpg" alt="Car Model 6">
+            <h2>BMW E32 / 7 series</h2>
+            <p>Model years: 1987-1994</p>
+            
+        </div>
+    </div>
+
+    <div id="grid">
+        <div class="grid-item" onclick="openModal('details7')">
+            <img src="images/e31.jpg" alt="Car Model 1"> 
+            <h2>BMW E31</h2>
+            <p>Model years: 1988-1999</p>       
+        </div>
+        <div class="grid-item" onclick="openModal('details8')">
+            <img src="images/e24.jpg" alt="Car Model 2">
+            <h2>BMW E24</h2>
+            <p>Model years: 1976-1989</p>
+            
+        </div>
+        <div class="grid-item" onclick="openModal('details9')">
+            <img src="images/e28.jpg" alt="Car Model 3">
+            <h2>BMW E28</h2>
+            <p>Model years: 1982-1988</p>
+            
+        </div>
+    </div>
+
+    <div id="modal" class="modal" onclick="closeModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="closeModal(event)">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+
+    <div id="details1" class="modal-details">
+        <img src="images/e30.jpg" alt="Car Model 1 Detail">
+        <h2>Production Years: 1990-2000</h2>
+        <p>The BMW E36 is celebrated for its excellent handling characteristics, solid build quality, and a range of powerful and reliable engines. It remains a popular choice among car enthusiasts and is often seen in various motorsport events and as a track day car. E36 is available in sedan, coupe, touring and compact body styles, coupe and sedan being the most sought-after. The cars were available either with an automatic or manual transmission, manual being clearly a more suitable option.</p>
+        <p>Petrol models: 316i, 318, 318is, 320i, 323i, 325i, 328i, M3 3.0, M3 3.2</p>
+        <p>Diesel models: 318tds, 325td, 325tds</p>
+        <h3>Models you should be looking for based on combination of reliability, power, features and price:</h3>
+        <p>325i Engine: 2.5L M50B25 Power: 141kW Years: 1990–1995</p>
+        <p>328i Engine: 2.8L M52B28 Power: 142kW Years: 1995–1999</p>
+        <h3> Our Choice:</h3>    
+        <p>325i features the best combination of reliability and power (141kW).
+        We would especially recommend 1991-1992 model years as they came with M50B25NV inline-6 engine, which is widely regarded as the best engine that BMW has ever produced.
+        M50B25 features a full iron engine block which is more prone to overheating and has better coolant channels compared to aluminum blocks which were present in later models.
+        M50B25NV doesn’t have the VANOS feature, which is present in all the next BMW engines and is notorious for high repair cost in case of a failure.
+        Because of it’s excellent construction and reliability the M50B25NV has earned the reputation of being one of the best engines for tuning and performance modifications.</p>
+        
+    </div>
+    <div id="details2" class="modal-details">
+        <img src="images/e36.jpg" alt="Car Model 2 Detail">
+        <h2>Production Years: 1990-2000</h2>
+        <p>The BMW E36 is celebrated for its excellent handling characteristics, solid build quality, and a range of powerful and reliable engines. It remains a popular choice among car enthusiasts and is often seen in various motorsport events and as a track day car. E36 is available in sedan, coupe, touring and compact body styles, coupe and sedan being the most sought-after. The cars were available either with an automatic or manual transmission, manual being clearly a more suitable option.</p>
+        <p>Petrol models: 316i, 318, 318is, 320i, 323i, 325i, 328i, M3 3.0, M3 3.2</p>
+        <p>Diesel models: 318tds, 325td, 325tds</p>
+        <h3>Models you should be looking for based on combination of reliability, power, features and price:</h3>
+        <p>325i Engine: 2.5L M50B25 Power: 141kW Years: 1990–1995</p>
+        <p>328i Engine: 2.8L M52B28 Power: 142kW Years: 1995–1999</p>
+        <h3> Our Choice:</h3>    
+        <p>325i features the best combination of reliability and power (141kW).
+        We would especially recommend 1991-1992 model years as they came with M50B25NV inline-6 engine, which is widely regarded as the best engine that BMW has ever produced.
+        M50B25 features a full iron engine block which is more prone to overheating and has better coolant channels compared to aluminum blocks which were present in later models.
+        M50B25NV doesn’t have the VANOS feature, which is present in all the next BMW engines and is notorious for high repair cost in case of a failure.
+        Because of it’s excellent construction and reliability the M50B25NV has earned the reputation of being one of the best engines for tuning and performance modifications.</p>
+        
+    </div>
+    <div id="details3" class="modal-details">
+        <img src="images/e39.jpg" alt="Car Model 3 Detail">
+        <h2>Production Years: 1990-2000</h2>
+        <p>The BMW E36 is celebrated for its excellent handling characteristics, solid build quality, and a range of powerful and reliable engines. It remains a popular choice among car enthusiasts and is often seen in various motorsport events and as a track day car. E36 is available in sedan, coupe, touring and compact body styles, coupe and sedan being the most sought-after. The cars were available either with an automatic or manual transmission, manual being clearly a more suitable option.</p>
+        <p>Petrol models: 316i, 318, 318is, 320i, 323i, 325i, 328i, M3 3.0, M3 3.2</p>
+        <p>Diesel models: 318tds, 325td, 325tds</p>
+        <h3>Models you should be looking for based on combination of reliability, power, features and price:</h3>
+        <p>325i Engine: 2.5L M50B25 Power: 141kW Years: 1990–1995</p>
+        <p>328i Engine: 2.8L M52B28 Power: 142kW Years: 1995–1999</p>
+        <h3> Our Choice:</h3>    
+        <p>325i features the best combination of reliability and power (141kW).
+        We would especially recommend 1991-1992 model years as they came with M50B25NV inline-6 engine, which is widely regarded as the best engine that BMW has ever produced.
+        M50B25 features a full iron engine block which is more prone to overheating and has better coolant channels compared to aluminum blocks which were present in later models.
+        M50B25NV doesn’t have the VANOS feature, which is present in all the next BMW engines and is notorious for high repair cost in case of a failure.
+        Because of it’s excellent construction and reliability the M50B25NV has earned the reputation of being one of the best engines for tuning and performance modifications.</p>
+        
+    </div>
+
+    <div id="details4" class="modal-details">
+        <img src="images/e34.jpg" alt="Car Model 4 Detail">
+        <h2>Production Years: 1990-2000</h2>
+        <p>The BMW E36 is celebrated for its excellent handling characteristics, solid build quality, and a range of powerful and reliable engines. It remains a popular choice among car enthusiasts and is often seen in various motorsport events and as a track day car. E36 is available in sedan, coupe, touring and compact body styles, coupe and sedan being the most sought-after. The cars were available either with an automatic or manual transmission, manual being clearly a more suitable option.</p>
+        <p>Petrol models: 316i, 318, 318is, 320i, 323i, 325i, 328i, M3 3.0, M3 3.2</p>
+        <p>Diesel models: 318tds, 325td, 325tds</p>
+        <h3>Models you should be looking for based on combination of reliability, power, features and price:</h3>
+        <p>325i Engine: 2.5L M50B25 Power: 141kW Years: 1990–1995</p>
+        <p>328i Engine: 2.8L M52B28 Power: 142kW Years: 1995–1999</p>
+        <h3> Our Choice:</h3>    
+        <p>325i features the best combination of reliability and power (141kW).
+        We would especially recommend 1991-1992 model years as they came with M50B25NV inline-6 engine, which is widely regarded as the best engine that BMW has ever produced.
+        M50B25 features a full iron engine block which is more prone to overheating and has better coolant channels compared to aluminum blocks which were present in later models.
+        M50B25NV doesn’t have the VANOS feature, which is present in all the next BMW engines and is notorious for high repair cost in case of a failure.
+        Because of it’s excellent construction and reliability the M50B25NV has earned the reputation of being one of the best engines for tuning and performance modifications.</p>
+        
+    </div>
+    <div id="details5" class="modal-details">
+        <img src="images/e38.jpg" alt="Car Model 5 Detail">
+        <h2>Production Years: 1990-2000</h2>
+        <p>The BMW E36 is celebrated for its excellent handling characteristics, solid build quality, and a range of powerful and reliable engines. It remains a popular choice among car enthusiasts and is often seen in various motorsport events and as a track day car. E36 is available in sedan, coupe, touring and compact body styles, coupe and sedan being the most sought-after. The cars were available either with an automatic or manual transmission, manual being clearly a more suitable option.</p>
+        <p>Petrol models: 316i, 318, 318is, 320i, 323i, 325i, 328i, M3 3.0, M3 3.2</p>
+        <p>Diesel models: 318tds, 325td, 325tds</p>
+        <h3>Models you should be looking for based on combination of reliability, power, features and price:</h3>
+        <p>325i Engine: 2.5L M50B25 Power: 141kW Years: 1990–1995</p>
+        <p>328i Engine: 2.8L M52B28 Power: 142kW Years: 1995–1999</p>
+        <h3> Our Choice:</h3>    
+        <p>325i features the best combination of reliability and power (141kW).
+        We would especially recommend 1991-1992 model years as they came with M50B25NV inline-6 engine, which is widely regarded as the best engine that BMW has ever produced.
+        M50B25 features a full iron engine block which is more prone to overheating and has better coolant channels compared to aluminum blocks which were present in later models.
+        M50B25NV doesn’t have the VANOS feature, which is present in all the next BMW engines and is notorious for high repair cost in case of a failure.
+        Because of it’s excellent construction and reliability the M50B25NV has earned the reputation of being one of the best engines for tuning and performance modifications.</p>
+        
+    </div>
+    <div id="details6" class="modal-details">
+        <img src="images/e32.jpg" alt="Car Model 6 Detail">
+        <h2>Production Years: 1990-2000</h2>
+        <p>The BMW E36 is celebrated for its excellent handling characteristics, solid build quality, and a range of powerful and reliable engines. It remains a popular choice among car enthusiasts and is often seen in various motorsport events and as a track day car. E36 is available in sedan, coupe, touring and compact body styles, coupe and sedan being the most sought-after. The cars were available either with an automatic or manual transmission, manual being clearly a more suitable option.</p>
+        <p>Petrol models: 316i, 318, 318is, 320i, 323i, 325i, 328i, M3 3.0, M3 3.2</p>
+        <p>Diesel models: 318tds, 325td, 325tds</p>
+        <h3>Models you should be looking for based on combination of reliability, power, features and price:</h3>
+        <p>325i Engine: 2.5L M50B25 Power: 141kW Years: 1990–1995</p>
+        <p>328i Engine: 2.8L M52B28 Power: 142kW Years: 1995–1999</p>
+        <h3> Our Choice:</h3>    
+        <p>325i features the best combination of reliability and power (141kW).
+        We would especially recommend 1991-1992 model years as they came with M50B25NV inline-6 engine, which is widely regarded as the best engine that BMW has ever produced.
+        M50B25 features a full iron engine block which is more prone to overheating and has better coolant channels compared to aluminum blocks which were present in later models.
+        M50B25NV doesn’t have the VANOS feature, which is present in all the next BMW engines and is notorious for high repair cost in case of a failure.
+        Because of it’s excellent construction and reliability the M50B25NV has earned the reputation of being one of the best engines for tuning and performance modifications.</p>
+        
+    </div>
+
+    <div id="details7" class="modal-details">
+        <img src="images/e31.jpg" alt="Car Model 7 Detail">
+        <h2>Production Years: 1990-2000</h2>
+        <p>The BMW E36 is celebrated for its excellent handling characteristics, solid build quality, and a range of powerful and reliable engines. It remains a popular choice among car enthusiasts and is often seen in various motorsport events and as a track day car. E36 is available in sedan, coupe, touring and compact body styles, coupe and sedan being the most sought-after. The cars were available either with an automatic or manual transmission, manual being clearly a more suitable option.</p>
+        <p>Petrol models: 316i, 318, 318is, 320i, 323i, 325i, 328i, M3 3.0, M3 3.2</p>
+        <p>Diesel models: 318tds, 325td, 325tds</p>
+        <h3>Models you should be looking for based on combination of reliability, power, features and price:</h3>
+        <p>325i Engine: 2.5L M50B25 Power: 141kW Years: 1990–1995</p>
+        <p>328i Engine: 2.8L M52B28 Power: 142kW Years: 1995–1999</p>
+        <h3> Our Choice:</h3>    
+        <p>325i features the best combination of reliability and power (141kW).
+        We would especially recommend 1991-1992 model years as they came with M50B25NV inline-6 engine, which is widely regarded as the best engine that BMW has ever produced.
+        M50B25 features a full iron engine block which is more prone to overheating and has better coolant channels compared to aluminum blocks which were present in later models.
+        M50B25NV doesn’t have the VANOS feature, which is present in all the next BMW engines and is notorious for high repair cost in case of a failure.
+        Because of it’s excellent construction and reliability the M50B25NV has earned the reputation of being one of the best engines for tuning and performance modifications.</p>
+        
+    </div>
+    <div id="details8" class="modal-details">
+        <img src="images/e24.jpg" alt="Car Model 8 Detail">
+        <h2>Production Years: 1990-2000</h2>
+        <p>The BMW E36 is celebrated for its excellent handling characteristics, solid build quality, and a range of powerful and reliable engines. It remains a popular choice among car enthusiasts and is often seen in various motorsport events and as a track day car. E36 is available in sedan, coupe, touring and compact body styles, coupe and sedan being the most sought-after. The cars were available either with an automatic or manual transmission, manual being clearly a more suitable option.</p>
+        <p>Petrol models: 316i, 318, 318is, 320i, 323i, 325i, 328i, M3 3.0, M3 3.2</p>
+        <p>Diesel models: 318tds, 325td, 325tds</p>
+        <h3>Models you should be looking for based on combination of reliability, power, features and price:</h3>
+        <p>325i Engine: 2.5L M50B25 Power: 141kW Years: 1990–1995</p>
+        <p>328i Engine: 2.8L M52B28 Power: 142kW Years: 1995–1999</p>
+        <h3> Our Choice:</h3>    
+        <p>325i features the best combination of reliability and power (141kW).
+        We would especially recommend 1991-1992 model years as they came with M50B25NV inline-6 engine, which is widely regarded as the best engine that BMW has ever produced.
+        M50B25 features a full iron engine block which is more prone to overheating and has better coolant channels compared to aluminum blocks which were present in later models.
+        M50B25NV doesn’t have the VANOS feature, which is present in all the next BMW engines and is notorious for high repair cost in case of a failure.
+        Because of it’s excellent construction and reliability the M50B25NV has earned the reputation of being one of the best engines for tuning and performance modifications.</p>
+        
+    </div>
+    <div id="details9" class="modal-details">
+        <img src="images/e28.jpg" alt="Car Model 9 Detail">
+        <h2>Production Years: 1990-2000</h2>
+        <p>The BMW E36 is celebrated for its excellent handling characteristics, solid build quality, and a range of powerful and reliable engines. It remains a popular choice among car enthusiasts and is often seen in various motorsport events and as a track day car. E36 is available in sedan, coupe, touring and compact body styles, coupe and sedan being the most sought-after. The cars were available either with an automatic or manual transmission, manual being clearly a more suitable option.</p>
+        <p>Petrol models: 316i, 318, 318is, 320i, 323i, 325i, 328i, M3 3.0, M3 3.2</p>
+        <p>Diesel models: 318tds, 325td, 325tds</p>
+        <h3>Models you should be looking for based on combination of reliability, power, features and price:</h3>
+        <p>325i Engine: 2.5L M50B25 Power: 141kW Years: 1990–1995</p>
+        <p>328i Engine: 2.8L M52B28 Power: 142kW Years: 1995–1999</p>
+        <h3> Our Choice:</h3>    
+        <p>325i features the best combination of reliability and power (141kW).
+        We would especially recommend 1991-1992 model years as they came with M50B25NV inline-6 engine, which is widely regarded as the best engine that BMW has ever produced.
+        M50B25 features a full iron engine block which is more prone to overheating and has better coolant channels compared to aluminum blocks which were present in later models.
+        M50B25NV doesn’t have the VANOS feature, which is present in all the next BMW engines and is notorious for high repair cost in case of a failure.
+        Because of it’s excellent construction and reliability the M50B25NV has earned the reputation of being one of the best engines for tuning and performance modifications.</p>
+        
+    </div>
+    
+
+
+    <script>
+        function openModal(id) {
+            const modal = document.getElementById('modal');
+            const modalBody = document.getElementById('modal-body');
+            const details = document.getElementById(id).innerHTML;
+            
+            modalBody.innerHTML = details;
+            modal.style.display = 'block';
+            document.body.classList.add('blur-background');
+            document.body.style.overflow = 'hidden';  
+        }
+
+        function closeModal(event) {
+            const modal = document.getElementById('modal');
+            modal.style.display = 'none';
+            document.body.classList.remove('blur-background');
+            document.body.style.overflow = 'auto';  
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('modal');
+            if (event.target == modal) {
+                closeModal(event);
+            }
+        }
+    </script>
+</body>
+</html>
